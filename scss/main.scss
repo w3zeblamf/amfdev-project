@@ -105,7 +105,7 @@ img {
 
 //Home Section
 #home {
-	//Home section A icons
+	//Home section A
 	&-a {
 		.specials {
 			margin-top: 3rem;
@@ -120,24 +120,24 @@ img {
 		}
 	}
 
-	//Home Section B icons
+	//Home Section B
 	&-b {
 		.stats {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 
-      div {
-        padding: 3rem 0;
+			div {
+				padding: 3rem 0;
 
-        &:nth-child(odd) {
-          background: $light-color;
-        }
+				&:nth-child(odd) {
+					background: $light-color;
+				}
 
-        &:nth-child(even) {
-          background: $medium-color;
-        }
-      }
-      
+				&:nth-child(even) {
+					background: $medium-color;
+				}
+			}
+
 			li {
 				line-height: 2;
 
@@ -150,8 +150,6 @@ img {
 					font-weight: bold;
 				}
 			}
-
-     
 		}
 	}
 }
