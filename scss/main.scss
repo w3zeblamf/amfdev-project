@@ -4,119 +4,154 @@
 // General Styles
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
-  line-height: 1.6;
-  background: fff;
+	font-family: 'Dosis', sans-serif;
+	line-height: 1.6;
+	background: fff;
 }
 
 a {
-  text-decoration: none;
-  color: $dark-color;
+	text-decoration: none;
+	color: $dark-color;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
-h2, h3, h4 {
-  text-transform: uppercase;
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
 }
-
 
 img {
-  width: 100%;
-  //This keep images in their container..!
+	width: 100%;
+	//This keep images in their container..!
 }
 
-// Logo 
+// Logo
 #logo {
-  width: 70px;
-  height: 70px;
-  //In case of using text not an image
-  color: #fff;
-  text-transform: uppercase;
-
+	width: 70px;
+	height: 70px;
+	//In case of using text not an image
+	color: #fff;
+	text-transform: uppercase;
 }
 
 // Main Nav
 #main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
 
-  ul {
-    display: flex;
-  }
+	ul {
+		display: flex;
+	}
 
-  li {
-    padding: 1rem 1.5rem;
-  }
+	li {
+		padding: 1rem 1.5rem;
+	}
 
-  a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    //border-bottom: transparent: avoid that the hover effect just push the text upwards to give the border.
-    padding-bottom: 0.5rem;
-    transition: border-color 0.5s;
+	a {
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+		border-bottom: 3px transparent solid;
+		//border-bottom: transparent: avoid that the hover effect just push the text upwards to give the border.
+		padding-bottom: 0.5rem;
+		transition: border-color 0.5s;
 
-    &:hover {
-      border-color: $medium-color;
-    }
+		&:hover {
+			border-color: $medium-color;
+		}
 
-    &.current {
-      border-color: $main-color;
-    }
-  }
+		&.current {
+			border-color: $main-color;
+		}
+	}
 }
 
 //Header Style
 
 #header {
-  // Header Home
-  &-home {
-background: $bg-image no-repeat center right/cover;
-height: 100vh;
-color: #fff;
+	// Header Home
+	&-home {
+		background: $bg-image no-repeat center right/cover;
+		height: 100vh;
+		color: #fff;
 
+		//Header content
+		.header-content {
+			text-align: center;
+			padding-top: 20%;
 
-  //Header content
-  .header-content {
-    text-align: center;
-    padding-top: 20%;
+			h1 {
+				font-size: 4rem;
+				line-height: 1.2;
+			}
+		}
+	}
 
-    h1 {
-      font-size: 4rem;
-      line-height: 1.2;
-    }
-  }
-  }
+	// Header Inner
+	// &-inner {
 
-// Header Inner
-  // &-inner {
-
-  // }
+	// }
 }
 
 //Home Section
 #home {
-  &-a {
-    .specials {
-      margin-top: 3rem;
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-columns: repeat(4, 1fr) ;
+	//Home section A icons
+	&-a {
+		.specials {
+			margin-top: 3rem;
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-columns: repeat(4, 1fr);
 
-      .fas {
-        color: $main-color;
-        padding-bottom: 0.4rem;
+			.fas {
+				color: $main-color;
+				padding-bottom: 0.4rem;
+			}
+		}
+	}
+
+	//Home Section B icons
+	&-b {
+		.stats {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background: $light-color;
+        }
+
+        &:nth-child(even) {
+          background: $medium-color;
+        }
       }
-    }
-  }
+      
+			li {
+				line-height: 2;
+
+				&.stats-title {
+					font-size: 1.2rem;
+				}
+
+				&.stats-number {
+					font-size: 2rem;
+					font-weight: bold;
+				}
+			}
+
+     
+		}
+	}
 }
