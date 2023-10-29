@@ -31,3 +31,30 @@ img {
   width: 100%;
   //This keep images in their container..!
 }
+
+// Logo 
+#logo {
+  width: 70px;
+  height: 70px;
+  //In case of using text not an image
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+// Main Nav
+
+
+//Header Style
+
+#header {
+  &-home {
+background: $bg-image no-repeat center right/cover;
+height: 100vh;
+color: #fff;
+  }
+
+  // &-inner {
+
+  // }
+}
