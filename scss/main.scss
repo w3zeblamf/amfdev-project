@@ -272,6 +272,21 @@ img {
 			}
 		}
 	}
+
+	// About Section C
+
+	&-c {
+		.about-logos {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 2rem;
+
+			img {
+				width: 70%;
+			}
+		}
+	}
+
 }
 
 
