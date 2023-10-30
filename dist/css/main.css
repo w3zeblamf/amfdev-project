@@ -99,10 +99,10 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
+  width: 130px;
+  height: 50px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: capitalize; }
 
 #main-nav {
   display: flex;
@@ -134,6 +134,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: url(/dist/img/showcase.jpg) no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -218,4 +223,6 @@ img {
       text-align: center;
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
-        background: #ffbc00; }
+        background: #ffbc00;
+        color: #333;
+        transition: all 1s; }

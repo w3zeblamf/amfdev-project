@@ -36,11 +36,11 @@ img {
 
 // Logo
 #logo {
-	width: 70px;
-	height: 70px;
+	width: 130px;
+	height: 50px;
 	//In case of using text not an image
 	color: #fff;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 // Main Nav
@@ -99,9 +99,11 @@ img {
 	}
 
 	// Header Inner
-	// &-inner {
-
-	// }
+	&-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+		height: 5.5rem;
+		border-bottom: 3px solid $main-color;
+	 }
 }
 
 //Home Section
