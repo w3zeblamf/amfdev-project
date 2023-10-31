@@ -1,8 +1,9 @@
 @import 'config';
 @import 'utilities';
 @import 'items_grid';
-// General Styles
 
+
+// General Styles
 * {
 	margin: 0;
 	padding: 0;
@@ -33,6 +34,7 @@ img {
 	width: 100%;
 	//This keep images in their container..!
 }
+//EO General Styles
 
 // Logo
 #logo {
@@ -415,3 +417,6 @@ img {
 	}
 }
 // EO Footer
+
+//Media Queries
+@import 'media';
