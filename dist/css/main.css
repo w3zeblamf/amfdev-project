@@ -295,7 +295,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
   grid-gap: 1.2rem; }
 
 #about-a .bio-image {
@@ -361,7 +361,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -416,6 +416,12 @@ img {
         color: #333;
         transition: all 1s; }
 
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
@@ -435,10 +441,12 @@ img {
   #home-c .process,
   #about-d .testimonials,
   .items {
-    grid-template-columns: 1fr; } }
-
-@media (max-width: 800px) {
-  #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; } }
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px #f4f4f4 solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; } }

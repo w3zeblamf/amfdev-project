@@ -1,5 +1,17 @@
 //Media Queries
 
+//Tablets & Smaller
+
+@media (max-width: 800px) {
+	#header-home {
+		height: 30rem;
+
+		.header-content {
+			padding-top: 5rem;
+		}
+	}
+}
+
 //Smartphones
 
 @media (max-width: 500px) {
@@ -37,19 +49,28 @@
     grid-template-columns: 1fr;
   }
 
+	#home {
+		&-a {
+			.specials div {
+				border-bottom: 1px $light-color solid;
+				padding-bottom: 1rem;
 
-}
+				&:last-child {
+					border: none;
+					padding-bottom: 0;
+				}
+			}
+		}
 
-//Tablets & Smaller
-
-@media (max-width: 800px) {
-	#header-home {
-		height: 30rem;
-
-		.header-content {
-			padding-top: 5rem;
+		&-b {
+			.stats div {
+				padding: 2rem 0 1rem 0;
+			}
 		}
 	}
+
 }
+
+
 
 //VIDEO: 10:23 mins
